@@ -1,0 +1,41 @@
+<Window x:Class="WpfMathApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Практическая работа 4 — Лобочкин М В"
+        Height="420" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Background="#F0F4F8">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="420">
+
+            <TextBlock Text="Практическая работа 4"
+                       FontSize="22" FontWeight="Bold"
+                       Foreground="#2C3E50"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,6"/>
+
+            <TextBlock Text="Лобочкин М В"
+                       FontSize="16"
+                       Foreground="#7F8C8D"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,40"/>
+
+            <Button Content="Страница 1 — Функция w"
+                    Style="{StaticResource NavButton}"
+                    Margin="0,0,0,16"
+                    Click="OpenPage1"/>
+
+            <Button Content="Страница 2 — Функция d"
+                    Style="{StaticResource NavButton}"
+                    Margin="0,0,0,16"
+                    Click="OpenPage2"/>
+
+            <Button Content="Страница 3 — Табуляция y"
+                    Style="{StaticResource NavButton}"
+                    Click="OpenPage3"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
